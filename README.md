@@ -1,35 +1,63 @@
 # Library Management System
 
-This project implements a simple Library Management System in C++. It allows users to manage books, members, and borrowing transactions.
+This project is a Library Management System, divided into three major management modules, a comprehensive query module, and a statistical analysis module.
 
 ## Table of Contents
 - [Features](#features)
+- [Extended Features](#extended-features)
 - [How to Use](#how-to-use)
 - [Code Explanation](#code-explanation)
 
 ## Features
 
-- **Book Management:**
-  - Add, modify, browse, and delete book information.
-  - View book details such as title, author, publisher, publication date, price, language, suitable age, and availability status.
+### 1. Picture Book Data Management
+- **Basic Information:**
+  - Book information includes book number, title, author, publisher, publication date, price, language, suitable age, and lending status.
+- **Functionality:**
+  - Provides basic functions such as entering, modifying, deleting, and browsing book information.
 
-- **Member Management:**
-  - Add, modify, browse, and delete member information.
-  - View member details including member number, name, age, gender, phone number, and membership level.
+### 2. Member Information Management
+- **Basic Information:**
+  - Member information includes member number, name, age, gender, and contact number.
+- **Functionality:**
+  - Provides basic functions such as entering, modifying, deleting, and browsing member information.
 
-- **Borrowing Management:**
-  - Add, modify, browse, and delete borrowing transactions.
-  - View borrowing details, including book number, member number, borrowing date, and return date.
+### 3. Borrowing Management
+- **Borrowing Information:**
+  - Borrowing information includes book number, member number, borrowing time, and return time.
+- **Functionality:**
+  - Provides basic functions such as entering, modifying, deleting, and browsing borrowing information.
 
-- **Comprehensive Queries:**
-  - Search for books by various criteria (book number, title, author).
-  - Search for members by various criteria (member number, name, phone number).
-  - Search for borrowing transactions by book or member.
+## Additional Modules
 
-- **Statistical Analysis:**
-  - Rank members by the number of books borrowed.
-  - Rank books by the number of times borrowed.
-  - Rank books by suitable age.
+### 4. Comprehensive Query Module
+- **Book Information Query:**
+  - Search by book number, title, or author.
+- **Member Information Query:**
+  - Search by member number, name, or contact number.
+- **Borrowing Information Query:**
+  - Search by book number or member number.
+
+### 5. Statistical Analysis Module
+- **Ranking:**
+  - Member borrowing ranking.
+  - Book borrowing ranking.
+  - Book suitable age ranking.
+
+## Extended Features
+
+### 1. Data Persistence
+- **Saving Data:**
+  - Save various data types from memory to files when the system exits.
+- **Loading Data:**
+  - Support loading data from files when the system is reopened.
+
+### 2. Membership Levels
+- **Membership Tiers:**
+  - Introduce different membership levels, regular and premium.
+- **Borrowing Limits:**
+  - Regular members can borrow a maximum of 10 books with a 1-month deadline. Each overdue book incurs a fine of $1 per day.
+  - Premium members have no limits on the number of books borrowed and no time restrictions.
 
 ## How to Use
 
